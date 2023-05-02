@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  :root {
+    /* ### Primary */
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+
+/* ### Neutral */
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+
+  }
+
+  body {
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vh bottom 65vh, left 45vw top 100vh;
+    font-family: 'League Spartan', sans-serif;
+  }
+
+  header {
+    color: var(--Very-Dark-Magenta);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    line-height: 40px;
+    font-weight: 700;
+    
+  }
+
+  section p {
+    font-size: 1.2rem;
+    margin-top: 24px;
+}
+
+
+  .first_rate .star_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .first_rate {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    gap: 8px;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+    padding: 10px;
+    
+  }
+
+.the_wrap {
+display: flex;
+flex-direction: column;
+gap: 10px;
+min-width: 100%;
+justify-content: center;
+font-size: 0.9rem;
+max-width: 200px;
+}
+
+.the_wrap img {
+    width: 17px;
+    height: 17px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 22px;
+    padding: 5%;
+    min-width: 100%;
+}
+
+article {
+    background-color: var(--Very-Dark-Magenta);
+    color: white;
+    border-radius: 8px;
+    padding: 3%;
+    min-width: 325px;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+article picture {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.word_wrap {
+    padding: 5px;
+    font-size: 0.8rem;
+    line-height: 15px;
+}
+
+.under {
+    color: var(--Soft-Pink)
+}
+
+article img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+@media screen and (min-width:684px) {
+
+
+  body {
+    background: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: right, bottom;
+    background-repeat: no-repeat;
+    background-position: right 45vh bottom 65vh, left 45vw top 70vh;
+
+    min-width: fit-content;
+  }
+
+ header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }   
+
+ section {
+    max-width: 65%;
+    text-align: left;
+    gap: 10px;
+    
+ }
+ .the_wrap {
+    min-width: 100%;
+ }
+
+ .first_rate {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: max( 230px, 90%);
+    font-size: 0.8rem;
+ }
+
+ .second {
+  margin-left: 8%;
+ }
+ .third {
+  margin-left: 16%;
+ }
+
+
+ main {
+   flex-flow: row nowrap;
+}
+
+.second_two {
+  margin-top: 2%;
+}
+.third_three {
+  margin-top: 6%;
+}
+}
