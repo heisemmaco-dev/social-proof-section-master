@@ -64,6 +64,12 @@
     background-repeat: no-repeat, no-repeat;
     background-position: right 50vh bottom 65vh, left 45vw top 100vh;
     font-family: 'League Spartan', sans-serif;
+/* 
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+    justify-content: center;
+    align-items: center; */
   }
 
   header {
@@ -73,7 +79,13 @@
     gap: 15px;
     align-items: center;
     text-align: center;
+    margin-block-end: 2rem;
+
+    max-width: 150rem;
+    overflow: hidden;
     padding: 5%;
+
+    margin: 4% auto;
   }
 
   header h1 {
@@ -126,8 +138,11 @@ main {
     flex-direction: column;
     justify-content: space-between;
     gap: 22px;
+    
     padding: 5%;
-    min-width: 100%;
+    max-width: 150rem;
+
+    margin: 4% auto;
 }
 
 article {
