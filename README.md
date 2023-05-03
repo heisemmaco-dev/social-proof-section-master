@@ -29,7 +29,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 
-<a href="https://heisemmaco-dev.github.io/testimonials-grid-section-main/">Live Site</a>
+<a https://heisemmaco-dev.github.io/social-proof-section-master/">Live Site</a>
 
 ### Built with
 
